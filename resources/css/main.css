@@ -36,3 +36,68 @@
     bottom: 25%;
     vertical-align: middle;
 }
+
+/*****Menu Styles*****/
+
+.menuOpenButton{
+    font-size: 1.75em;
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    color: black;
+}
+
+.menuOpenButton:hover{
+    color: purple;
+}
+
+.menuCloseButton{
+    font-size: 1.75em;
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    color: white;
+}
+
+.menuCloseButton:hover{
+    color: purple;
+}
+
+#menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#menu > ul > li{
+    padding-top: 10%;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+}
+
+#menu > ul > li > a{
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#menu > ul > li > a:hover{
+    color: purple;
+}
+
+#menu > h2{
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
